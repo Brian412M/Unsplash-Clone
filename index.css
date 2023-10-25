@@ -1,0 +1,366 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+input:focus{
+    outline: none;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header{
+    margin: 20px 0;
+}
+
+.top-header{
+    position: fixed;
+    z-index: 900;
+    background: #fff;
+    width: 100%;
+    top:-20px ;
+    padding-top:30px ;
+    
+}
+
+.container #search1{
+    height: 28px;
+    background: rgba(0, 0, 0, 0.081);
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding:0 20px;
+    
+}
+
+@media only screen and (min-width:300px) {
+
+    .container #search1{
+        width:20%;
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.container #search1::placeholder{
+    color: #1e1e1e;
+
+}
+
+.container a{
+    color: #000;
+    
+}
+
+.container .link3{
+    color: blue;
+}
+
+.container #span1{
+    height: 5px;
+    width: 0.5px;
+    
+}
+
+#logo2{
+    position: relative;
+    right: 25px;
+}
+
+/*Slider section*/
+#header2{
+    position: relative;
+    top:20px;
+
+}
+
+#underline{
+    border-bottom: 1px solid #000;
+    width:80px;
+    display: inline-block;
+    position: relative;
+    right: 66px;
+    top: 20px;
+    z-index: 800;
+    padding: 0;
+    
+
+}
+#edit{
+    display: inline-block;
+    /*border-bottom: 1px solid #000;*/
+    padding-bottom: 8px;
+    width: fit-content;
+    
+}
+#edit a{
+    color: #000;
+    position: relative;
+    left: 10px;
+    text-decoration: none;
+}
+
+#split2{
+    color: rgb(165, 154, 154);
+    border: solid 1px #a59a9a;
+
+    position: relative;
+    right: 60px;
+    top: 5px;
+    padding: 10px 0px;
+}
+
+#scroll{
+    width:92%;
+    font-size: 72%;
+    position: relative;
+    left: 90px;
+    top: -38px;
+    /*border: solid 1px red;*/
+    height: 50px;
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.scrl{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+.scrl a{
+    color: #000;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+/*Welcome to Unsplash Section*/
+#welcome{
+    color: #fff;
+    /*border: solid 2px pink;*/
+    background-image: url("scenery.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    text-align: center;
+    width: 100%;
+
+}
+#welcome h2{
+    font-size: 190%;   
+}
+#welcome p{
+    font-size: 120%;
+}
+
+/*Search for photos*/
+#welcome input{
+    border: solid 1px #fff;
+    border-radius: 5px;
+}
+#welcome input::placeholder{
+    font-size: 15px;
+    position: relative;
+    
+}
+#welcome input[type=search]:focus{
+outline:none;
+}
+#welcome h2, #welcome p,#welcome input{
+    display: flex;
+    position: relative;
+    top: 20%;
+    left: 20%;
+}
+
+#welcome input{
+    width: 60%;
+    height: 60px;
+    padding:0 50px;
+}
+
+#alert{
+    background: url('underwater.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    position: relative;
+    top:50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cont3{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    align-items: center;
+
+    color: #fff;
+}
+
+#cont3 a{
+    color: #fff;
+}
+
+/*Images section*/
+.images{
+    position: relative;
+    top: 100px;
+    width: auto;
+    height: fit-content;
+    
+
+    display: flex;
+    
+    
+        
+}
+ 
+#image-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+#image-container ul{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100%;
+    
+}
+
+#image-container li{
+    /*margin: 5px 0;
+    flex-grow: 1;
+    width: 20vh;*/
+    
+    height: 45vh;
+    flex-grow: 1 5 auto;
+    align-items: stretch;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    margin: 10px;
+    
+  
+    
+}
+
+
+#image-container li::after{
+    content: '';
+    flex-grow: 10;
+}
+#image-container img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width:359.5px) {
+    /*body{
+        overflow-x:hidden;
+    }*/
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*Modal Styling*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 50px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 70%;
+    height: 80%;
+    max-width: 1000px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 55px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+ @media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}

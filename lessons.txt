@@ -1,0 +1,28 @@
+
+<!-- Display the sample image -->
+<img src="image-1.jpg" alt="Sample Image" width="200px" height="200px">
+
+<!-- Create a download link with an icon -->
+<a href="#" id="download-link"><i class="fa fa-download" ></i> Download</a>
+
+<!-- Create a script to handle the download -->
+<script>
+  // Get the download link and the sample image source
+  const downloadLink = document.getElementById('download-link');
+  const sampleImage = 'image-1.jpg';
+
+  // Add an event listener for when the download link is clicked
+  downloadLink.addEventListener('click', () => {
+    // Create a new anchor element to initiate the download
+    const download = document.createElement('a');
+
+    // Set the href attribute of the anchor to the sample image source
+    download.href = sampleImage;
+
+    // Set the download attribute of the anchor to the desired filename
+    download.download = 'sample-image.jpg';
+
+    // Simulate a click on the anchor element to initiate the download
+    download.click();
+  });
+</scrip>

@@ -1,0 +1,23 @@
+img:hover{
+    cursor: pointer;
+}
+
+#search1{
+    display: none;
+}
+
+.banner{
+    position: relative;
+    background: #000;
+    padding:20px 0;
+    color: antiquewhite;
+
+    font-family: 'Climate Crisis', cursive;
+    font-size: 15px;
+
+    
+}
+
+#logo{
+    border-radius: 15px;
+}

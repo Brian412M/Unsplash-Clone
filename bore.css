@@ -1,0 +1,58 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    line-height: 50px;
+}
+
+header{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header h3{
+    text-decoration: underline wavy #000;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    position: relative;
+    
+    border:solid 1px #000;
+    width: 350px;
+    text-align: center;
+}
+
+#dp img{
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+table{
+    border: solid thin #000;
+    border-collapse: collapse;
+    margin: 25px 0;
+}
+
+td,th{
+    border: solid thin #000;
+    padding: 20px;
+    margin: 25px 0;
+}
+
+ol li{
+    padding: 0 20px;
+}
+p{
+    word-break: break-word;
+    
+}
+
+textarea{
+    overflow: none;
+    
+}
+

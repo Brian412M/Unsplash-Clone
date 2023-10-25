@@ -1,0 +1,54 @@
+body{
+    background: url("Explore-bg.jpg");
+    background-size:cover;
+    background-position: center;
+}
+
+header{
+    text-align: center;
+    background: #1e01018a;
+    box-shadow:0px 5px 35px 1px #fff;
+    padding: 10px 0;
+    font-family: "Regular 400", Anton;
+    font-size: 30px;
+}
+.bg{
+    color: aliceblue;
+}
+    
+.description{
+background: #00000093;
+background-size: cover;
+}
+
+
+
+.description{
+    font-family: "Bold 700 Italic", Josefin Sans;
+    font-size: 20px;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.images #img{
+    min-width:250px;
+    margin:10px;
+
+    transition: transform 1s, ease-in;
+    transform: scale(1);
+    
+}
+
+.images #img:hover {
+    cursor: pointer;
+    border-radius:7px;
+    transform:scale(1.2);
+}
+.nav-home{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#welcome{
+    color: #fff;
+    /*border: solid 2px pink;*/
+    background-image: url("scenery.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    text-align: center;
+    width: 100%;
+}
+
+#welcome h2, #welcome p, #welcome input {
+    display: flex;
+    position: relative;
+    top: 20%;
+    left: 25%;
+    
+}
+
